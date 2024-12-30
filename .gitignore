@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+datasets/bdd100k_det/
+runs/
+det_env/
+/*.pt
+bs/
+显卡仪表盘.ipynb
+coco.yaml
