@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-本项目旨在使用 BDD100K 数据集对 YOLO11 模型进行微调，以提高其在城市交通场景下的目标检测性能。BDD100K 是一个包含 100k 视频及其标注的大型数据集，广泛应用于自动驾驶和智能交通系统的研究。在本项目中，我们将利用数据集的一个子集 `100k_images`。（其按照 7:2:1 的比例划分为训练集、验证集和测试集）
+本项目旨在使用 `BDD100K` 数据集对 `YOLO11` 模型进行微调，以提高其在城市交通场景下的目标检测性能。`BDD100K` 是一个包含 100k 视频及其标注的大型数据集，广泛应用于自动驾驶和智能交通系统的研究。在本项目中，我们将利用数据集的一个子集 `100k_images`。（其按照 7:2:1 的比例划分为训练集、验证集和测试集）
 
 ## 目录结构
 
@@ -29,7 +29,7 @@ bdd100k_yolo11_finetune/
 
 ### 1. 下载数据集
 
-本项目使用 BDD100K 数据集的一个子集 `100k_images` 进行训练。执行以下脚本下载数据集：
+本项目使用 `BDD100K` 数据集的一个子集 `100k_images` 进行训练。执行以下脚本下载数据集：
 
 ```bash
 python scripts/download_bdd100k.py
@@ -44,7 +44,7 @@ python scripts/download_bdd100k.py
 
 ### 2. 解压与整理数据
 
-建议在项目目录中新建一个 datasets 文件夹，并按照以下结构解压数据：
+建议在项目目录中新建一个 `datasets` 文件夹，并按照以下结构解压数据：
 
 ```bash
 mkdir -p datasets/bdd100k_det/images/train
@@ -74,7 +74,7 @@ mkdir -p datasets/bdd100k_det/labels/test
 
 ### 1. 直接使用 
 
-在 training.py 中，通过以下方式加载预训练模型：
+在 `training.py` 中，通过以下方式加载预训练模型：
 
 ```python
 from ultralytics import YOLO
@@ -89,7 +89,7 @@ model = YOLO("yolo11m")
 
 yolo11l.pt：[YOLO11M 预训练权重](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m.pt)
 
-将下载的权重文件放置在项目根目录或指定的路径下，并在 training.py 中引用。
+将下载的权重文件放置在项目根目录或指定的路径下，并在 `training.py` 中引用。
 
 ## 开始训练
 
