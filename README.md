@@ -18,11 +18,11 @@ bdd100k_yolo11_finetune/
 │   │   │   ├── train/    # 训练集标签
 │   │   │   └── val/      # 验证集标签
 │   │   └── bdd100K_det_yolo11.yaml  # YOLO 配置文件
-├── download_bdd100k.py# 数据集下载脚本
-├── label_preprocess.ipynb# 标签预处理脚本
-├─── model_test.ipynb# 模型测试与可视化
-├── training.py# 训练脚本
-└── README.md# 项目说明文件
+├── download_bdd100k.py              # 数据集下载脚本
+├── label_preprocess.ipynb           # 标签预处理脚本
+├─── model_test.ipynb                # 模型测试与可视化
+├── training.py                      # 训练脚本
+└── README.md                        # 项目说明文件
 ```
 
 ## 项目设置与数据准备
